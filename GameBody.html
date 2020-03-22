@@ -1,0 +1,61 @@
+<!-- This Project is an aplication of a game that lets the user choose which color is provided
+     base the informationg given by the RGB color 
+     January 3, 2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Connecting to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="GameStyling.css">
+
+    <title> The Color Game </title>
+
+</head>
+<body>
+ 
+    <h1 id="win"> Guess the color...
+        <br>
+        <span id="colorDisplay"> RGB </span> 
+    </h1>
+
+    <!-- Options  -->
+    <div id="options">
+        <button id="reset"> NEW GAME </button>
+        <span id="message"> </span>
+        <button  id="easy" > EASSY </button>
+        <Button id="hard" class="selectedOption"> HARD </Button>
+        <!-- <button id="hard" class="selectedOption"> HARD</button>
+            1. uncoment for hard mode! 
+            2. change the currently "hard to medium"
+            3. take out class="selectedOption" from mediun
+           
+        -->
+    </div>
+
+    <!-- Squares -->
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        <!-- If user one to play the hard mode -->
+        <!-- <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div> -->
+    </div>
+
+    <!-- Connecting JavaScript -->
+    <script type="text/javascript" src="TwoOptionGame.js"></script>
+
+    <!-- If user one to play hard mode uncomment js below and commet the js above -->
+    <!-- <script type="text/javascript" src="GameAction.js"></script> -->
+</body>
+</html>

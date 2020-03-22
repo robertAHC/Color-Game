@@ -1,0 +1,91 @@
+/* This part of the project is for styling the page */
+
+/* Website's backgroung */
+body{
+    background-color: dimgrey;
+    margin: 0;
+    font-family: "Montserrat","Avenir";
+} 
+
+/* Stylig the squares */
+.square {
+    width: 30%;
+    background: blue ;
+    padding-bottom: 28%;
+    float: left; /* this is to make each square one next to the other */
+    margin: 1.66%; 
+    border-radius: 15%;
+    transition: background 0.5s;
+
+    /* To work in most of the platform as possible */
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5;
+}
+
+/* Styling the overall container that includes the saquer */
+.container {
+    margin: 20px auto;  /* for spacing between the square and everything in the top */
+    max-width: 550px ;
+}
+
+h1 {
+    color: white;
+    line-height: 1.1 ;
+    text-align: center;
+    background: lightslategrey;
+    margin: 0;
+    font-weight: normal ;
+    text-transform: uppercase; 
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+/* Styling the options */
+#options {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+    
+}
+
+/* Styling the selected optionss */
+.selectedOption {
+    color:white;
+    background: lightslategrey;
+}
+
+#colorDisplay {
+    font-size: 150%;
+}
+
+ button {
+    border: none;
+    font-family: "Montserrat","Avenir";
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 680;
+    color: lightslategrey;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;  /* This gives the fading animation*/
+
+    /* To work in most of the platform as possible */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5;
+
+    outline: none;
+
+}
+
+button:hover {
+    color:white;
+    background: lightslategrey;
+    
+}
+
+#message {
+    width: 20%;
+    display: inline-block;
+}
